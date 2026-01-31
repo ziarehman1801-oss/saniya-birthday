@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <img src="asset/cake.png" alt="Loading icon" class="loading-icon">
+            <p class="loading-text">Loading something special for my love...</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <button id="start-btn" onclick="startExperience()">
+            ✨ Start ✨
+        </button>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="perfect song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <section class="header-section">
+        <div class="polaroid-frame">
+            <img src="asset/main.jpeg" class="floating-heart">
+        </div>
+        <div id="entry-overlay">
+</div>
+         <div class="heart-container left" id="hearts-left">
+            <img src="asset/imageleft.jpeg" class="heart-img">
+        </div>
+        <h1 id="typewriter"></h1>
+        <div class="heart-container right" id="hearts-right">
+            <img src="asset/imageright.jpeg" class="heart-img">
+        </div>
+        <h2 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #d63384;">
+        A day that made the world a little more beautiful....
+        </h2>
+        <p style="font-size: 1.5rem; color: #555;">Feburary 01, 2006 🗓️</p>
+        <p>On this day, God created a soul so gentle and beautiful,one meant to bring light,radiance,
+            and quiet joy into the lives she would touch. Thankyou for just existing saniyaa.
+        </p>
+        <button onclick="scrollToMemories()"> pretty moon</button>
+    </section>
+
+    <section id="memories" class="gallery-section">
+        <h2> What you see here are only fragments - her beauty is always more than what a photo can hold. Just my saniya being the most prettiest girl effortlessly heheh🥰. </h2>
+        <div class="grid">
+            <div class="photo-card"><img src="asset/1.jpeg" alt="Memory 1"></div>
+            <div class="photo-card"><img src="asset/2.jpeg" alt="Memory 2"></div>
+            <div class="photo-card"><img src="asset/3.jpeg" alt="Memory 3"></div>
+            <div class="photo-card"><img src="asset/4.jpeg" alt="Memory 4"></div>
+            <div class="photo-card"><img src="asset/5.jpeg" alt="Memory 5"></div>
+            <div class="photo-card"><img src="asset/6.jpeg" alt="Memory 6"></div>
+            <div class="photo-card"><img src="asset/7.jpeg" alt="Memory 7"></div>
+            <div class="photo-card"><img src="asset/8.jpeg" alt="Memory 8"></div>
+            <div class="photo-card"><img src="asset/9.jpeg" alt="Memory 9"></div>
+            <div class="photo-card"><img src="asset/10.jpeg" alt="Memory 10"></div>
+            <div class="photo-card"><img src="asset/11.jpeg" alt="Memory 11"></div>
+            <div class="photo-card"><img src="asset/12.jpeg" alt="Memory 12"></div>
+        </div>
+        <section id="video-memories" class="gallery-section">
+            <h2>Moments that feel like that quiet goodbyes when i dont want to leave and when everything goes silent, but the warmth of those hours stays with me the whole day.</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                </div>
+        </section>
+    </section>
+
+    <section class="letter-section">
+        <button class="letter-btn" onclick="openLetter()">💌 Open My Letter</button>
+
+        <div class="letter-container" id="letterContainer">
+            <div class="polaroid-frame">
+            <img src="asset/r.jpeg" class="floating-heart">
+            </div>
+
+            <div class="letter-envelope" id="letter">
+                <div class="letter-paper">
+                    <h3>My Love ❤️</h3>
+                    <p>
+                        Happy Birthday Saniya 💕<br>
+                        From the moment you came into my life, everything became brighter.
+                        I'm really very very gratefull to have you in my life.
+                        May Allah bless you with everything you ever dreamed of.
+                        I may not be the guy you wanted/manifested but for me you are the only girl i ever dreamed of.
+                        Kitne hi jhagde hojaye humare beech mere dil me kabhi tmhare lie pyar kam nahi hoga saniya.
+                        You are the best thing happened in my life.
+                        Keep smiling. You have a very bright future merijaaan. I beleive in you.
+                        Thankyou for always making me feel blessed and happy.
+                        Never met such a pretty face and pretty soul.
+                        fan hogaya hu tmhara hehe
+                        love you bhot saraaaaaa
+                        Inshallah Tmhare sab sapne pure honge and ye bhot acha jayega tmhara
+                        Ab aap bhi 20years ki hogai hai, khair usse mjhe kya kitni hi badi hojayein aap rahengi meri cutu baby hi hamesha.
+                        Your smile, your kindness, and your love mean the world to me.
+                        Once again Happy twentieth birthday SANIYA REHMAN 💖
+                        <br><br>
+                        Yours Zia 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class="message-box">
+            <h3>A Special Message for You</h3>
+            <p> Im always here for you Saniya and you have to believe in yourself. Tum sabse best ho and you really have a great potential. Hamesha yu hi hasti muskurati rehna✨</p>
+            <div class="hearts">❤️❤️❤️</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
